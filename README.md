@@ -20,5 +20,6 @@ Done in file 'part3.ipynb'. The negative values where never removed as I wasn't 
 
 
 ### Part 4: Infrastructure as Code & Data Pipeline with AWS CDK
-The rearc_lambda.py is uploaded using a terraform script in main.tf and provider.tf. It is scheduled to run daily at 12:00pm UTC.
+The rearc_lambda.py is uploaded using a bash script run.sh, terraform script main.tf, provider.tf. It is scheduled to run daily at 12:00pm UTC. 
+As part of the upload, a deploy environment is created. 
 I run out of time and didn't implement the sqs queue and the second lambda to read that queue. 
